@@ -380,7 +380,7 @@ console.log("Undefined");
 
 var a;
 console.log(a);
-consolelog("No value is initialized it is undefined");
+console.log("No value is initialized it is undefined");
 
 console.log("Null value");
 
@@ -430,11 +430,45 @@ console.log("If one condition is true from both then it will be true");
 
 
 
+let str = ("Hello, world !");
+let newstr = str.includes(",");
+
+// For loop
+// for(Start,end,change){}
+// for(initialization,condition,updation){}
+
+console.log("For loop : yeh condition tabtak chalega jabh tak yeh condition true rahegi");
+
+for(let i=1; i<10; i++){
+    console.log("Heyyy");
+}
+
+// loop is made for two things :
+//  - Straight forward loop,
+//  - Dynamic loop
+
+console.log("While loop : start, condition, updation");
 
 
 
+let i =2;
+while (i<12) {
+    console.log(i);
+    i++;
+}
+
+console.log("do while");
+
+let j = 2;
+do {
+    console.log(j);
+    j++;
+} while (condition);
 
 
+for(let k =1; k<23; k++){
+    
+}
 
 
 
