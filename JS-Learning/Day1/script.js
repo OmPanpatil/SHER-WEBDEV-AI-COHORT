@@ -256,9 +256,9 @@ console.log(a>10?console.log("Hello"): console.log("Not Hello"));
 
     var a = 12;
     var b = 13;
-    const c = 34;
+    // const c = 34;
 
-    console.log(a,b,c);
+    console.log(a,b);
 
 
     // (4) Compilers and interpreters :
@@ -294,6 +294,145 @@ console.log(a>10?console.log("Hello"): console.log("Not Hello"));
 
 // JS the DOM - creating phase
 // Code likhkar cheezein banana sikhna
+
+
+// Day2
+
+console.log("Day-2 : Sarthak Senseii");
+
+// Data types :
+
+console.log('Data Types :');
+
+// - premitives  
+//  - Number(10,10.5,10.555565),    range : 2^53 value
+//  - String('a',"Sart", "Sheryians coding"),
+//  - Boolean(True or False)
+//  - Undefined, Null, Symbol, BigInt
+
+// - reference
+//  - Array, Object, Function
+
+var a = 10;
+// Number represent in blue colour
+console.log(a);
+
+var b = "SHA";
+// String represnts in white colour
+console.log(b);
+
+// Prompt :
+
+var figure = prompt("put a one digit figure : ");
+
+console.log(figure);
+
+console.log("Arithmetic Operations : ");
+
+var a = 10;
+var b = 5;
+
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+console.log(a%b);
+console.log(a , b);
+
+var a = "VS";
+var b = "Code";
+
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+
+console.log("Not a Number");
+console.log("+:Add (Concatination), -:Subtraction, *:Multiply, /:Division, %:Remainder");
+
+
+console.log("String Type : ")
+var user1 = prompt("Enter first username :");
+var user2 = prompt("Enter first username :");
+
+console.log(user1+user2);
+
+
+
+console.log("Number :");
+
+var nums1 = prompt("Enter ur nums 1 :");
+var nums2 = prompt("Enter ur nums 2 :");
+
+console.log(nums1+nums2);
+
+console.log("Type conversion from string into Number :");
+
+var numss1 = prompt("Enter ur numss 1 :");
+var numss2 = prompt("Enter ur numss 2 :");
+// Conversion into number from string
+var numss1real = Number(numss1);
+var numss2real = Number(numss2);
+
+console.log(numss1real+numss2real);
+
+console.log("Undefined");
+
+var a;
+console.log(a);
+consolelog("No value is initialized it is undefined");
+
+console.log("Null value");
+
+var z = null;   //Value store kardi as null or empty
+console.log(z);
+
+console.log("BigInt");
+var y = 1000000000000000000000000000000000000000000n;     //write n at last for BigInt
+
+console.log(y);
+
+console.log("Hoisting : declaration and initialization will happen first");
+
+console.log(x);
+
+var x = 47;
+
+console.log(x);
+
+console.log("Conditionals :");
+
+// if(condition){
+//     condition agar true hogayi toh kya karna hai;
+// }
+
+if (10>5) {
+    console.log("Yes");
+    
+} else {
+    console.log("No");
+}
+
+console.log("operators :");
+console.log("&&");
+console.log(" f f == f");
+console.log(" f T == f");
+console.log(" t f == f");
+console.log(" t t == t");
+console.log("Both conditions should be true otherwise it will give false i.e. it will move from if into else")
+
+console.log("|| (OR)");
+console.log(" f f == f");
+console.log(" f T == t");
+console.log(" t f == t");
+console.log(" t t == t");
+console.log("If one condition is true from both then it will be true");
+
+
+
+
+
+
 
 
 
