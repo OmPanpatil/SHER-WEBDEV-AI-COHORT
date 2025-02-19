@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        @keyframes moveUpDown {
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform:translateY(-10px);
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <main class="w-full py-8 font-(family:Haelvetica)">
+        <nav class="flex justify-between items-center px-[10rem]">
+            <h1 class="text-xl font-medium">
+                Portfolio
+            </h1>
+
+            <div class="links flex gap-4 ">
+                <a class="text-lg font-medium bgcolor-rgb(54, 69, 79) opacity-40 hover:opacity-100 tracking-tighter" href="#">Home</a>
+                <a class="text-lg font-medium bgcolor-rgb(54, 69, 79) opacity-40 hover:opacity-100 tracking-tighter" href="#">Socials</a>
+                <a class="text-lg font-medium bgcolor-rgb(54, 69, 79) opacity-40 hover:opacity-100 tracking-tighter" href="#">Projects</a>
+                <a class="text-lg font-medium bgcolor-rgb(54, 69, 79) opacity-40 hover:opacity-100 tracking-tighter" href="#">Contacts</a>
+            </div>
+
+        </nav>
+
+        <section class="w-full mt-20 flex justify-between items-end px-[10rem]">
+            <div class="leftheadings">
+                <h6 class="text-2xl -mb-3 tracking-tighter font-bold">Hello, I am</h6>
+                <h1 class="text-9xl -ml-1 tracking-tighter font-bold leading-none">Om.</h1>
+            </div>
+            <div class="rightheading gap-3 flex items-center">
+                <h4 class="font-medium tracking-tighter">[ <span>06:11 PM </span>]</h4>
+                <div class="w-32 h-[1px] bg-black"></div>
+                <h3 class="font-medium tracking-tight ">Creative Front End Developer</h3>
+            </div>
+
+
+        </section>
+
+        <section class="picture w-full h-[50rem] mt-20 px-[10rem]">
+            <img class="w-full h-full object-cover object-[0%_60%]" src="./images/three.jpg" alt="Image">
+        </section>
+<!-- 
+        <section class="experience w-full h-[20rem] mt-15 relative px-[3rem] py-[3rem]">
+            <h2 class="font-medium text-4xl absolute top-15 left-90 -translate(-50,-50)">[I design & build experiences]</h2>
+            <p class="text-center mt-3 font-medium text-lg w-5xl absolute top-30 left-10 -translate(-50,-50)">I’m Om Panpatil, a passionate designer and developer who thrives on crafting engaging digital experiences. I design and build intuitive, user-friendly interfaces with a focus on clean aesthetics and functionality. Whether it's a website, app, or creative project, my goal is to merge innovation with user-centered design to bring ideas to life.</p>
+            <img class="w-14 h-[8vh] px-[1/2rem] py-[1/2rem] rotate-340 absolute left-30" src="./images/visual-studio-code.png" alt="Visual studio code">
+            <img class="w-14 h-[8vh] px-[1/2rem] py-[1/2rem] rotate-30 absolute left-250" src="./images/html.png" alt="HTMl">
+            <img class="w-14 h-[8vh] px-[1/2rem] py-[1/2rem] rotate-30 absolute top-63 left-180" src="./images/javascript.png" alt="JS">
+            <img class="w-14 h-[8vh] px-[1/2rem] py-[1/2rem] rotate-330 absolute top-57 left-50" src="./images/css.png" alt="CSS">
+        </section> -->
+
+        <!-- <section class="about w-full px-10 py-20 bg-red-500 mt-32 flex justify-center items-center">
+            <div class="text text-center w-2/3 relative">
+                <h2 class="text-6xl font-bold tracking-tighter mb-10">[I design & build experiences]</h2>
+                <p class=" text-2xl font-medium tracking-normal">I’m Om Panpatil, a passionate designer and developer who thrives on crafting engaging digital experiences. I design and build intuitive, user-friendly interfaces with a focus on clean aesthetics and functionality. Whether it's a website, app, or creative project, my goal is to merge innovation with user-centered design to bring ideas to life.</p>
+            </div>
+        </section> -->
+
+        <!-- <section class="w-full px-10 py-20 mt-80 bg-red-500">
+            <div class="w-full px-10 py-8 bg-purple-500 flex items-center  gap-10 p">
+                <h1 class="text-8xl tracking-tighter font-medium">2017</h1>
+                <div class="w-70 h-1 bg-black"></div>
+
+            </div>
+        </section>
+
+        <section class="">
+
+        </section> -->
+
+        <section class="about w-full mt-40 flex justify-center items-center px-12 py-12 px-[10rem]">
+            <div class="text text-center w-4/3 relative px-13 py-13">
+                <img class="w-14 h-[8vh] px-[1/2rem] py-[1/2rem] rotate-30 absolute left-250 top-2 drop-shadow-md-black" style="animation: moveUpDown 2s infinite;" src="./images/html.png" alt="Html">
+                <img class="w-14 h-[8vh] px-[1/2rem] py-[1/2rem] rotate-340 absolute left-25 top-1" style="animation: moveUpDown 2s infinite;" src="./images/visual-studio-code.png" alt="VSCode">
+                <img class="w-14 h-[8vh] px-[1/2rem] py-[1/2rem] rotate-340 absolute top-58 left-50" style="animation: moveUpDown 2s infinite;" src="./images/css.png" alt="CSS">
+                <img class="w-14 h-[8vh] px-[1/2rem] py-[1/2rem] rotate-330 absolute top-60 left-200" style="animation: moveUpDown 2s infinite;" src="./images/javascript.png" alt="JS">
+                <!-- Heading -->
+                <h1 class="text-5xl font-bold tracking-tight text-center mb-9">[ I design and build experiences ]</h1>
+                <!-- Description -->
+                <p class="text-xl font-medium tracking-normal">I’m Om Panpatil, a passionate designer and developer who thrives on crafting engaging digital experiences. I design and build intuitive, user-friendly interfaces with a focus on clean aesthetics and functionality. Whether it's a website, app, or creative project, my goal is to merge innovation with user-centered design to bring ideas to life.</p>
+            </div>
+        </section>
+
+        <!-- 2018- Beginning -->
+
+        <section class="w-full px-10 py-20 mt-40 h-550 relative px-[10rem]">
+            <!-- Headings -->
+            <div class="bg-white z-[2] w-full px-10 py-8 flex items-center justify-start gap-7 sticky top-0">
+                <h1 class="text-5xl tracking-tighter font-medium">. 2018</h1>
+                <div class="w-60 h-1 bg-black"></div>
+                <h3 class="text-5xl tracking-tighter font-medium text-zinc-400 ">The Beginning</h3>
+            </div>
+            <!-- content -->
+
+            <div class="imagecontent w-full gap-10 flex px-10 py-8">
+                <div class="col flex flex-col gap-20 w-1/3">
+                    <div class="w-80 h-125 bg-black opacity-10"></div>
+                    <div class="w-80 h-80 bg-black opacity-10"></div>
+                    <div class="w-80 h-180 bg-black opacity-10"></div>
+
+
+                </div>
+                <div class="col flex flex-col gap-20 w-1/3 py-3 pt-30">
+                    <div class="w-80 h-180 bg-black opacity-10"></div>
+                    <div class="w-80 h-80 bg-black opacity-10"></div>
+                    <div class="w-80 h-110 bg-black opacity-10"></div>
+
+
+                </div>
+                <div class="col flex flex-col gap-20 w-1/3 py-3 pt-15">
+                    <div class="w-80 h-110 bg-black opacity-10"></div>
+                    <div class="w-80 h-180 bg-black opacity-10"></div>
+                    <div class="w-80 h-95 bg-black opacity-10"></div>
+
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- 2019 Escalation -->
+
+        <section class="w-full px-10 py-20 h-630 relative px-[10rem]">
+            <!-- Headings -->
+            <div class="bg-white z-[2] w-full px-10 py-8 flex items-center justify-start gap-7 sticky top-0">
+                <h1 class="text-5xl tracking-tighter font-medium">. 2019</h1>
+                <div class="w-60 h-1 bg-black"></div>
+                <h3 class="text-5xl tracking-tighter font-medium text-zinc-400 ">Escalation</h3>
+            </div>
+            <!-- content -->
+
+            <div class="imagecontent w-full gap-10 flex px-10 py-8">
+                <div class="col flex flex-col gap-20 w-1/3">
+                    <div class="w-80 h-125 bg-black opacity-10"></div>
+                    <div class="w-80 h-80 bg-black opacity-10"></div>
+                    <div class="w-80 h-180 bg-black opacity-10"></div>
+
+
+                </div>
+                <div class="col flex flex-col gap-20 w-1/3 py-3 pt-30">
+                    <div class="w-80 h-180 bg-black opacity-10"></div>
+                    <div class="w-80 h-80 bg-black opacity-10"></div>
+                    <div class="w-80 h-110 bg-black opacity-10"></div>
+
+
+                </div>
+                <div class="col flex flex-col gap-20 w-1/3 py-3 pt-15">
+                    <div class="w-80 h-110 bg-black opacity-10"></div>
+                    <div class="w-80 h-180 bg-black opacity-10"></div>
+                    <div class="w-80 h-95 bg-black opacity-10"></div>
+
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Showcasing -->
+
+        <section class="w-full bg-red-500">
+            <video class="w-full h-[40rem]" autoplay loop muted src="https://cdn.pixabay.com/video/2021/06/07/76733-560201119_large.mp4"></video>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

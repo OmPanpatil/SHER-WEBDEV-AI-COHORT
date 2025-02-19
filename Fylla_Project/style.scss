@@ -1,0 +1,84 @@
+// @mixin light-weight-font{
+//     font-weight: 200;
+// }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+main{
+    padding: 1rem;
+    padding-top: 3rem;
+    width: 100%;
+    border: 1px solid black;
+    // margin: 1rem;
+}
+
+.view-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    p{
+        font-weight: 200;
+        opacity: 0.8;
+    }
+
+    h1{
+        font-weight: 400;
+        font-size: 3.8rem;
+        // background: blue($color: #000000);
+        width: 70%;
+    }
+
+    img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+}
+
+.view-2{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+
+    .line{
+        background-color: #000;
+        height: 1px;
+        width: 100%;
+    }
+}
+
+
+
+@media (min-width: 1020px) {
+
+    main{
+        padding: 2rem;
+    }
+
+    .view-1{
+
+        p{
+            font-size: 1.5rem;
+        }
+
+        h1{
+            font-size: 8rem;
+            width: 60%;
+        }
+        // font-size: 5rem;
+    }
+    
+}

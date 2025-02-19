@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://ik.imagekit.io/sheryians/Sheryians_logo_EzwgcppnD">
+    <title>Project Excercise 2 : Contact Form</title>
+</head>
+<body>
+    <h2>Send a message</h2>
+    <br><br>
+    <form>
+        <!-- Name -->
+        <label for="username"><strong>Username :</strong></label>
+        <input type="text" id="Username" placeholder="Name" required>
+        <br><br>
+        <!-- email -->
+        <label for="email"><strong>Email-Id :</strong></label>
+        <input type="email" name="email" id="email" placeholder="Enter ur Email-Id" required>
+        <br><br>
+        <!-- Country -->
+         <label for="country">Country :</label>
+        <input type="text" id="country" name="COuntry" list="countries">
+        <datalist id="countries">
+            <option value="usa">USA</option>
+            <option value="INDIA">India</option>
+            <option value="jpn">Japan</option>
+            <option value="du">Dubai</option>
+        </datalist>
+        <br><br>
+        <!-- Age -->
+        <label for="age"><strong>Age :</strong></label>
+        <input type="number" id="age" placeholder="Enter ur age" min="1" max="110" required>
+        <br><br>
+        <!-- Phone number -->
+        <label for="num"><strong>Phone.no :</strong></label>
+        <input type="tel" id="num" name="Phone" placeholder="contact number" maxlength="10" required>
+        <!-- <small>Format:xxx-xxx-xxxx</small> -->
+        <br><br>
+        <label for="sex"><strong>Sex :</strong></label>
+        <input name="sexx" id="sex" type="radio">Male
+        <input name="sexx" id="sex" type="radio">Female
+        <input name="sexx" id="sex" type="radio">Others
+        <br><br>
+        <label for="rating"><strong>Rating :</strong></label>
+        <input type="range" id="rating" name="rangee" min="1" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
+        <output>10</output>
+        <br><br>
+        <!-- Submit -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

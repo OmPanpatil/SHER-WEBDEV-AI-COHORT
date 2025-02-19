@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    padding: 2rem 2.5rem;
+}
+
+.gpc{
+    background-color: lightcoral;
+}
+
+.computer{
+    background-color: rgba(242, 242, 137, 0.503);
+}
+
+.BNS{
+    position: relative;
+    left: 40%;
+}
+
+.NS{
+    background-color: rgba(162, 102, 230, 0.533);
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Day7</title>
+</head>
+<body>
+    <h1>📌Day 7 of learning :</h1>
+    <br>
+    <h3>px,%,rem,em,vh,vw</h3>
+    <br>
+    Px
+    <div id="parent">
+        <div id="child"></div>
+    </div>
+    %
+    <div id="parents">
+        <div id="childs"></div>
+    </div>
+    <br>
+    1rem =16px default
+    <!-- it is set deafault to 16px and we can overwrite by css and increase/shrink the size of the content -->
+    <h1>This is rem</h1>
+    <br>
+    em depend karta hai parent ka font-size par 
+    <div id="childss">
+        <h2>This is em</h2>
+    </div>
+    <!-- <h2></h2> -->
+    <br>
+    <h1>📖Important conclusion :</h1>
+    <ol>
+        <li>px : It is a fixed value</li>
+        <li>% : It depends upon the parent dimensions</li>
+        <li>rem : It is all about the root element [HTML] font-size</li>
+        <li>em : It depends upon parent element font-size</li>
+        <li>vh and vw : are the viewport height and width.</li>
+    </ol>
+    <br><br>
+    <h2>Media Queries :</h2>
+    <p>The one of the best technique or rule is mobile(device) first approach to be follows. We have different type of screen and hence we use it for the responsiveness. we develop the website for desktop, Tablet and Mobile. </p>
+    <br>
+    min-width : yeh hamesha uss certain level of width kae baad hi badegi or change hoggi values as per the width. and max-width : yeh humesha uss level of width tak hi rahega maximum width aur uskae baad value change hogi.
+    <br><br>
+    Breakpoints : Device changing at some width from desktop to Tablet to mobile
+    Desktop : 1024px, Tablet : 768px, 1200+ : considered to be a wide screen
+    <br><br>
+    SCSS
+    <br><br>
+    <h2>Flex :</h2>
+    <br>
+    <div class="flex-parents">
+        <div class="flex-childs"></div>
+        <div class="flex-childs"></div>
+        <div class="flex-childs"></div>
+        <div class="flex-childs"></div>
+        <div class="flex-childs"></div>
+        <div class="flex-childs"></div>
+        <div class="flex-childs"></div>
+        <div class="flex-childs"></div>
+    </div>
+    <br><br>
+    <!-- Grid-area -->
+    <div class="gaparents">
+        <div class="gachilds gachilds-a"></div>
+        <div class="gachilds gachilds-b"></div>
+        <div class="gachilds gachilds-c"></div>
+        <div class="gachilds gachilds-d"></div>
+    </div>
+</body>
+</html>

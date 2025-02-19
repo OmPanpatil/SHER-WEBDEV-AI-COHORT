@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.btn{
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5vw 1vw;
+    /* color: var(--clr-accent); */
+    color: palevioletred;
+    /* background-color: var(--clr-rgba); */
+    background-color: rgba(216, 112, 147, 0.321);
+    /* border: 1vw solid var(--clr-accent); */
+    border: 0.5vw solid palevioletred;
+    border-radius: 5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: transform 0.3s;
+}
+
+.btn:hover{
+    transform: translateY(-10px);
+}
