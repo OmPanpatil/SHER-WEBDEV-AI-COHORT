@@ -419,7 +419,7 @@ console.log(" f f == f");
 console.log(" f T == f");
 console.log(" t f == f");
 console.log(" t t == t");
-console.log("Both conditions should be true otherwise it will give false i.e. it will move from if into else")
+console.log("Both conditions should be true otherwise it will give false i.e. it will move from if into else");
 
 console.log("|| (OR)");
 console.log(" f f == f");
@@ -466,9 +466,9 @@ do {
 } while (condition);
 
 
-for(let k =1; k<23; k++){
+// for(let k =1; k<23; k++){
     
-}
+// }
 
 
 
