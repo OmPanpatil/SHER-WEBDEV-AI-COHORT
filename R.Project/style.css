@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Helvetica;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 html, body {
@@ -12,66 +12,6 @@ html, body {
 
 main {
   width: 100%;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.1rem;
-}
-main .hero-text {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-main .hero-text img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-main .text {
-  display: flex;
-  justify-content: space-between;
-}
-main .text p {
-  font-size: 0.7rem;
-  font-weight: 545;
-}
-main .image-text .top {
-  width: 100%;
   height: 100%;
-  aspect-ratio: 1/1;
-}
-main .image-text img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-main .image-text .bottom {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  padding: 2rem 0;
-}
-main .image-text .bottom h1 {
-  font-size: 2.5em;
-  font-weight: 300;
-  text-transform: uppercase;
-  line-height: 1;
-}
-main .image-text .bottom p {
-  font-size: 1.6em;
-  font-weight: 300;
-  line-height: 1.3;
-  font-family: monospace;
-}
-
-@media (min-width: 1020px) {
-  main {
-    padding: 3rem;
-  }
-  main .image-text {
-    flex-direction: row-reverse;
-    gap: 4em;
-  }
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */

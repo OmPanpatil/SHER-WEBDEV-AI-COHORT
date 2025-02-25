@@ -158,7 +158,7 @@ else{
 }
 
 
-// Binary operators : true - 1 and false - 0
+// Binary operators : true -> 1 and false -> 0
 
 // && (multiply pae kaam karta hai) --> 
 // 0 0 == 0
