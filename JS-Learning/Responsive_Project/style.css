@@ -141,7 +141,7 @@ main .vertical-text .bottom .text p {
   font-family: monospace;
   font-size: 1.5em;
   text-transform: none;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 @media (min-width: 900px) {
@@ -154,11 +154,18 @@ main .vertical-text .bottom .text p {
     flex-direction: row-reverse;
     gap: 3em;
   }
+  main .image-text .top {
+    width: 100%;
+    height: 100%;
+  }
   main .image-text .bottom {
     width: 100%;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
   }
   main .image-text .bottom h1 {
-    font-size: 4.5em;
+    font-size: 4.9em;
+    font-weight: 400;
   }
   main .image-text .bottom p {
     font-size: 1.9em;
@@ -170,5 +177,35 @@ main .vertical-text .bottom .text p {
   }
   main .image-text .bottom .services .service p {
     font-size: 2em;
+  }
+  main .vertical-text {
+    flex-direction: row;
+    gap: 4.5em;
+  }
+  main .vertical-text .top {
+    width: 35%;
+  }
+  main .vertical-text .bottom {
+    width: 75%;
+    flex-direction: row-reverse;
+  }
+  main .vertical-text .bottom p {
+    font-size: 0.9em;
+    font-size: 300;
+  }
+  main .vertical-text .bottom .text {
+    padding-bottom: 1rem;
+    padding-top: 0.5em;
+  }
+  main .vertical-text .bottom .text h1 {
+    font-size: 6em;
+    font-weight: 350;
+    line-height: 1em;
+  }
+  main .vertical-text .bottom .text p {
+    margin-top: auto;
+    font-size: 1.6em;
+    width: 73%;
+    line-height: 1.5em;
   }
 }/*# sourceMappingURL=style.css.map */
