@@ -3,7 +3,7 @@ console.log("hello, world!");
 console.error("Hello, world!");
 console.warn("Hello, world");
 console.info("Hello, world!");
-console.table("Om", 26);
+console.table({name : "Om", age : 21});
 
 // Q2
 console.log("Question2");
@@ -14,6 +14,10 @@ console.log(35*2 - (10/2) + 7);
 
 console.log("Question3");
 console.log("To know any type we can write typeof under double inverted comma");
+console.log("Null is a object type was a error. And typeof is a datatags ");
+console.log(typeof Number(12));
+
+
 
 // Q4
 
@@ -46,9 +50,18 @@ a = a - b;
 console.log(a);
 console.log(b);
 
-// Q6
+// Q6 : Group
 
 console.log("Q6");
+console.groupCollapsed("Plan Execution :");
+// console.group("Plan Execution :");
+    console.log("Calisthenics");
+    console.log("Coding and problem solving");
+    console.log("Web Dev");
+console.groupEnd();
+
+
+
 
 // console.group
 
