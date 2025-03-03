@@ -80,6 +80,25 @@ for(let i = raa.length-1; i>=0; i--){
 }
 
 
+console.log("Q.20 : Find the most frequent element in an array.");
+
+let mfe = [3,4,1,3,4,6,7];
+// {
+//     "3" : 2,
+//     "4" : 2,
+//     "1" : 1,
+//     "6" : 1,
+//     "7" : 1,
+// }
+
+let obj={}
+
+mfe.forEach(function(val){
+    // obj[val] ? (obj[val]=1) : obj[val]++
+    obj[val] === undefined ? (obj[val]=1) : obj[val]++;
+});
+
+
 
 
 
