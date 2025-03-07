@@ -76,6 +76,8 @@ console.log("/ will return Quotient. ");
 console.log("MOST IMPORTANT : IN JS, INTEGER/INTEGER WILL ALWAYS GIVE US SOME FLOAT VALUE. SO, WE USE MATH.FLOOR");
 
 
+// 
+
 
 
 
