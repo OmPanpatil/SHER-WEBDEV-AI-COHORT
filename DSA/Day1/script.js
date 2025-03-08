@@ -123,6 +123,63 @@ console.log(Math.floor(Math.random()*90000 + 10000));  //It will generate a rand
 console.log("Q3. Area of a triangle by Heron's Formula : ");
 // Sqrt of s(s-a)(s-b)(s-c) where s= (a+b+c)/2
 
+let Aa = Number(prompt("Enter the first side of the triangle : "));
+let Bb = Number(prompt("Enter the Second side of the triangle : "));
+let Cc = Number(prompt("Enter the Third side of the triangle : "));
+
+if(Aa+Bb<=Cc || Aa+Cc<=Bb || Bb+Cc<=Aa){
+    console.log("Can't proceed further, sides are not valid.")
+}
+else{
+    let s = (Aa+Bb+Cc)/2;
+    console.log(Math.sqrt(s*(s-Aa)*(s-Bb)*(s-Cc)));
+    
+}
+
+console.log("Q.4 : Circumference of a circle : ");
+let radius = Number(prompt("Enter the radius of the circle : "));
+console.log(2*Math.PI * radius);
+
+console.log("Q.5 : Area of a circle : ");
+console.log(Math.PI * Math.pow(radius,2));
+
+console.log("If- else condition : ");
+
+let aa1 = Number(prompt("Enter the first number : "));
+let bb1 = Number(prompt("Enter the second number : "));
+
+if(aa1>bb1){
+    console.log("First number is greater than the second number.");
+}
+else{
+    console.log("Second number is greater than the first number.");
+}
+
+if(aa1%2 == 0){
+    console.log("First number is even.");
+    
+}
+else if(bb1%2 == 0){
+    console.log("Second number is even.");
+    
+}
+else{
+    console.log("Both numbers are odd.");
+}
+
+console.log("Q.3 :");
+let username = prompt("Enter ur name : ");
+let Age = Number(prompt("Enter ur age : "));
+if(Age>=18){
+    console.log("Congratulations " + username + " you are now eligible for voting.");
+}
+else{
+    console.log("Sorry " + username + " you are not eligible for voting.");
+    
+}
+
+
+
 
 
 
