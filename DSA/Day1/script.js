@@ -178,6 +178,16 @@ else{
     
 }
 
+// Leap year
+let year = Number(prompt("Enter the required year : "));
+
+if(year%4 == 0){
+    console.log("Leap year. ");
+}
+else{
+    console.log("Not a leap year.");
+}
+
 
 
 
