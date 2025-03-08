@@ -76,7 +76,75 @@ console.log("/ will return Quotient. ");
 console.log("MOST IMPORTANT : IN JS, INTEGER/INTEGER WILL ALWAYS GIVE US SOME FLOAT VALUE. SO, WE USE MATH.FLOOR");
 
 
-// 
+// Day-2 :
+
+console.log("Day2 :");
+
+console.log(Math.floor(5/2));  //to level down the number.
+console.log(Math.ceil(10.2));  //to level up the number.
+console.log(Math.round(10.4));
+console.log(Math.round(10.5));  // round behaves as a math.floor if the value is from 1.0 to 1.4 and math.ceil if the value is from 1.5 to 1.9.
+console.log(Math.abs(-5));
+
+console.log(Math.trunc(104758.368493978));
+
+console.log(Math.pow(5,2));  //5^2
+
+console.log(Math.sqrt(25));
+console.log(Math.sqrt(40)); //If the value of square root is not a perfect square, then it will return the value in decimal.
+
+console.log(Math.cbrt(27));  //Cube root of 27
+console.log(Math.cbrt(60));
+
+console.log(Math.max(1,5,3,5,3,2,8));
+
+console.log(Math.min(3,5,2,6,9,1));
+
+console.log(Math.random());
+let ra = 375392.9576562;
+console.log(Number(ra.toFixed(3)));
+
+console.log("Q1. Compound interest :");
+
+// C.I = P[(1 + R/100)^t]-P;  = A-P;
+
+let P = Number(prompt("Enter the Principal amount :"));
+let R = Number(prompt("Enter the rate of interest :"));
+let T = Number(prompt("ENter the time period :"));
+
+CI = P *(Math.pow((1+R/100),T))-P;
+console.log("Compound interest is : " + CI);
+
+
+console.log("Q2. Generate OTP :");
+
+console.log(Math.floor(Math.random()*90000 + 10000));  //It will generate a random number between 10000 to 99999 of five digits.
+
+console.log("Q3. Area of a triangle by Heron's Formula : ");
+// Sqrt of s(s-a)(s-b)(s-c) where s= (a+b+c)/2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
