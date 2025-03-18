@@ -71,9 +71,38 @@ console.log(Math.floor(Math.random()*9000 + 1000));
 
 // Q.6 : Sum up to n terms 
 
+// let n = Number(prompt("Enter the number : "));
+// let sum = 0;
+// for(let i = 1; i<=n; i++){
+//     sum += i;
+// }
+// console.log(sum);
+
+// Q.7 : factorial
+
+// let n = Number(prompt("Enter the number : "));
+// let fact=1;
+
+// for(let i=1; i<=n; i++){
+//     fact= fact*i;
+// }
+// console.log(fact);
+
+// Q.8 : sum and odd numers seperately  and add them.
+
+const prompt = require("prompt-sync")();
 let n = Number(prompt("Enter the number : "));
-let sum = 0;
-for(let i = 1; i<=n; i++){
-    sum += i;
+let evensum = 0;
+let oddsum = 0;
+
+for(let i=0; i<=n; i++){
+    if(i%2==0){
+        evensum += i;
+    }
+    else{
+        oddsum += i;
+    }
 }
-console.log(sum);
+
+console.log(`The sum of even number is : ${evensum}`);
+console.log(`The sum of odd number is : ${oddsum}`);
