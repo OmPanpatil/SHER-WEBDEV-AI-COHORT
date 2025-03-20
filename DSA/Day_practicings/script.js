@@ -283,18 +283,94 @@ console.log(Math.floor(Math.random()*9000 + 1000));
 
 // While : initialisation, condition, updation
 
-let n=5;
-let i=1;
+// let n=5;
+// let i=1;
 
-while(i<=n){
-    console.log(i);
-    i++;
-}
+// while(i<=n){
+//     console.log(i);
+//     i++;
+// }
 
 // For: use for known like items we are known
 // While : use for unknown till it spends.
 // % to eliminate and gives the last number : it gives the remainder.
 // here, / gives the firsts numbers : it gives the quotient.
+
+
+// Nested Looping :
+
+// for(let i=1; i<=5; i++){
+//     for(let j=1; j<=5; j++){
+//         process.stdout.write(" * ");
+//     }
+//     console.log();   //for the next line 
+// }
+
+// Q.2 : Right Angled triangle :
+
+// const prompt = require('prompt-sync')();
+// let n = prompt("Enter the number : ");
+
+// for(let i=1; i<=n; i++){
+//     for(let j=1; j<=i; j++){
+//         process.stdout.write(" * ");
+//     }
+//     console.log();
+// }
+
+// for printing 1, 1 2, 1 2 3,....
+
+// for(let i=1; i<=n; i++){
+//     for(let j=1; j<=i; j++){
+//         process.stdout.write(j + " ");
+//     }
+//     console.log();
+// }
+
+// Mirror right angled triangle :
+
+// const prompt = require('prompt-sync')();
+// let n = prompt("Enter the number : ");
+
+// for(let i=1; i<=n; i++){
+//     for(let j=1; j<= n-i+1; j++){
+//         process.stdout.write(" * ");
+//     }
+//     console.log();
+// }
+
+
+// String.fromchar() : it converts the ascii value to the character.
+// charCodeAt() : it converts the character to the ascii value.
+
+// Ascii value :
+
+// const prompt = require('prompt-sync')();
+// let n = Number(prompt("Enter the number u want to convert to char value : "));
+
+// for(let i=1; i<=n; i++){
+//     for(let j=1; j<=i; j++){
+//         process.stdout.write(String.fromCharCode(n) + " ");
+//         // n++;
+//     }
+//     console.log();
+// }
+
+// Q.pattern : 
+
+const prompt = require('prompt-sync')();
+let n = Number(prompt("Enter the number : "));
+
+for(let i=1; i<=n; i++){
+    for(let j=1; j<=n-i; j++){
+        process.stdout.write(" ");
+    }
+    for(let j=1; j<=i; j++){
+        process.stdout.write("*");
+    }
+    console.log();
+}
+
 
 
 
