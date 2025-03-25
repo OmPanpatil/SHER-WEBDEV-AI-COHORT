@@ -1,0 +1,19 @@
+const images = [
+    'https://www.lummi.ai/api/render/image/62f1ea80-4b57-4df8-a16b-71fc818fd0a7?token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IjYyZjFlYTgwLTRiNTctNGRmOC1hMTZiLTcxZmM4MThmZDBhNyIsImRvd25sb2FkU2l6ZSI6Im1lZGl1bSIsInJlbmRlclNwZWNzIjp7ImVmZmVjdHMiOnsicmVmcmFtZSI6e319fSwic2hvdWxkQXV0b0Rvd25sb2FkIjpmYWxzZSwianRpIjoiZXZXOTF4OVpnbndBTmtJSUpRYXZOIiwiaWF0IjoxNzQyOTIwNjg0LCJleHAiOjE3NDI5MjA3NDR9.rreLYHW4waxa4dSSyU0N39P8nVuJ3HKBWlIxmQ8BdH0',
+
+    'https://www.lummi.ai/api/render/image/bdc23141-137f-48cb-84f1-ac282d9f765f?token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ImJkYzIzMTQxLTEzN2YtNDhjYi04NGYxLWFjMjgyZDlmNzY1ZiIsImRvd25sb2FkU2l6ZSI6Im1lZGl1bSIsInJlbmRlclNwZWNzIjp7ImVmZmVjdHMiOnsicmVmcmFtZSI6e319fSwic2hvdWxkQXV0b0Rvd25sb2FkIjpmYWxzZSwianRpIjoiaW5ORXdybFRpeTk1bFl3QXhZeTltIiwiaWF0IjoxNzQyOTIyMTUzLCJleHAiOjE3NDI5MjIyMTN9.K14P2B16lEOmGk5OgW7fIlRGnPrdR_1Ja10dkAyGK88',
+
+    'https://www.lummi.ai/api/render/image/b072662c-fb52-4066-9552-7256cb0c47b2?token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ImIwNzI2NjJjLWZiNTItNDA2Ni05NTUyLTcyNTZjYjBjNDdiMiIsImRvd25sb2FkU2l6ZSI6Im1lZGl1bSIsInJlbmRlclNwZWNzIjp7ImVmZmVjdHMiOnsicmVmcmFtZSI6e319fSwic2hvdWxkQXV0b0Rvd25sb2FkIjpmYWxzZSwianRpIjoiRUFDeER6SDZJZS1FWFRpMTB0U1NFIiwiaWF0IjoxNzQyOTIyMjcwLCJleHAiOjE3NDI5MjIzMzB9.XbuCfksul2UFr1Lgl2kzLikpfPSD7RIVlL4xxZtJPjA',
+
+    'https://www.lummi.ai/api/render/image/d2955751-16dc-4ddc-a5c1-895f71885177?token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ImQyOTU1NzUxLTE2ZGMtNGRkYy1hNWMxLTg5NWY3MTg4NTE3NyIsImRvd25sb2FkU2l6ZSI6Im1lZGl1bSIsInJlbmRlclNwZWNzIjp7ImVmZmVjdHMiOnsicmVmcmFtZSI6e319fSwic2hvdWxkQXV0b0Rvd25sb2FkIjpmYWxzZSwianRpIjoiZUhrYzJnemZ2T0xMdi1Qck5kdENVIiwiaWF0IjoxNzQyOTIyMzA1LCJleHAiOjE3NDI5MjIzNjV9.gvvmholE1075Zh9HB1w2J1Lc3vzw4jndKg1EPQkR65Q'
+];
+
+function getRandomImage(){
+    const randomimage = Math.floor(Math.random()*images.length);
+    console.log(images[randomimage]);
+}
+
+let imggs = document.querySelector('images');
+let btn = document.querySelector('button');
+
+btn.addEventListener('click', getRandomImage);
