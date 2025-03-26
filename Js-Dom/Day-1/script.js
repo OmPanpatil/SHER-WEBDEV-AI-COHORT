@@ -77,3 +77,25 @@
 
 // btns.addEventListener('click',colorbox);
 
+
+let btn = document.querySelector('button');
+let heading2 = document.querySelector('h5');
+
+let flag = 0;
+
+btn.addEventListener('click', function(){
+    if(flag == 0){
+        heading2.innerHTML = 'Bankai';
+        btn.innerHTML = 'Unfollow';
+        btn.style.left = '28%';
+        flag = 1;
+    } else{
+        heading2.innerHTML = 'Stranger';
+        btn.innerHTML = 'Follow';
+        // btn.style.backgroundColor = 'blue';
+        // btn.style.color = 'white';
+        btn.style.left = '31%';
+        flag = 0;
+    }
+
+})
