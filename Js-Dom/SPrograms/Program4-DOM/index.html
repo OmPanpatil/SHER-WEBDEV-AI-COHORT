@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Correct Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="h-screen ">
+    <div class="bg-white px-9 py-7">
+        <!-- Fixed width and background color -->
+        <div id="progress" class="w-80 bg-gray-300 rounded-full h-5 border border-gray-300">
+            <!-- Add a child div for the progress bar (optional) -->
+            <!-- <div class="h-full bg-blue-500 rounded-full" style="width: 50%"></div> -->
+            <div id="growth" class="bg-green-600 h-full w-0 rounded-full">
+
+            </div>
+        </div>
+        <div class="flex justify-end">
+            <h5 id="percent">0%</h5>
+        </div>
+        <div class="mt-4 flex justify-between">
+            <h3>Song.mp3</h3>
+            <button class="bg-green-500 text-white rounded font-medium px-5 py-2 text-xs active:scale-95">Download File</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
