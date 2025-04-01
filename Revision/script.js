@@ -29,6 +29,50 @@ console.log(x + y);
 var r = '10';
 var s = '10';
 console.log(r + s);
+// int+int = int, string +int =string, int+string = string, string+string = string
+
+// var num1 = prompt('Enter a number : ');
+// var num2 = prompt('Enter a number : ');
+
+// var num1real = Number(num1);
+// var num2real = Number(num2);
+
+// console.log(num1real + num2real);
+
+
+// Hoisting :
+// console.log(aa);
+// var aa = 10;
+
+// Conditionals :
+// if-else, else-if, switch, break, continue.
+// var aaa =5;
+// var bbb =3;
+// if(aaa>bbb){
+//     console.log(" a is greater than b ");   
+// }
+// else{
+//     console.log(aaa + bbb + "is not euals.");
+    
+// }
+
+
+// var age = Number(prompt("Enter ur age : "));
+
+// if(age>18){
+//     console.log("u are under 18. U can't vote now.");
+// } else if(age==18){
+//     console.log("u are of age 18. U can vote now.");   
+// }else{
+//     console.log("Not a voter.");
+// }
+
+
+// Binary : true : 1, false: 0
+// &&(*) => 0 0 == 0, 0 1 == 0, 1 0 == 0, 1 1 == 1  (BOTH THE CONDITIONS MUST BE TRUE.)
+// || (+) =>  0 0 == 0, 0 1 == 1, 1 0 == 1, 1 1 == 1 (IF ONE OF THE CONDITIONS IS TRUE. IT WILL BE TRUE)
+
+// Difference between : == and === : == checks or compares the value only and === compare values as well as the data types.
 
 
 
