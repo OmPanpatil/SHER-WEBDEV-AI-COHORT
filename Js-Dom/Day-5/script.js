@@ -32,4 +32,6 @@
 
 // console.log(arr[1].username, arr[1].age);
 
+// Debouncing and throttling
+
 
