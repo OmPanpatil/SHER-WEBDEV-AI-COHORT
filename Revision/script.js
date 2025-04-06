@@ -74,5 +74,9 @@ console.log(r + s);
 
 // Difference between : == and === : == checks or compares the value only and === compare values as well as the data types.
 
+// Data types : a) Primitive, b) Reference
+// a) primitive : number(10,10.5,10.555), string, boolean, undefined, null, symbol, bigint
+// b) referencs : array, objects, functions.
+
 
 
