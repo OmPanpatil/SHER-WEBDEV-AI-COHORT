@@ -209,4 +209,89 @@ console.log(r + s);
 // break : loop ko rokta hai.
 // continue : loop ko waha uss element se skip karta hai.
 
+// var shery = (function(){
+//     var name = 'Sheryians coding school';
+//     var age = 10;
+//     var city = 'Pune';
+//     var country = 'India';
+
+//     function getName(){
+//         return name;
+//     }
+
+//     function getAge(){
+//         return age;
+//     }
+
+//     function getCity(){
+//         return city;
+//     }
+
+//     function getCountry(){
+//         return country;
+//     }
+
+//     return {
+//         getName: getName,
+//         getAge: getAge,
+//         getCity: getCity,
+//         getCountry: getCountry
+//     };
+// })();
+// console.log(shery.getName());
+
+// var shery = (function(){
+//     return{
+//         imageeffect : function(){
+//             console.log("Image effect applied.");
+//         },
+//         mousefollower : function(){
+//             console.log("Mouse follower applied.");
+//         }
+//     };
+// })();
+
+// shery.imageeffect();
+
+// Q.1 : write hello
+
+// console.log("Hello");
+// console.warn("hello");
+// console.error("hello");
+// console.info('hello');
+// console.table({name:'om', age:10, city:'pune'});
+// confirm("Are u 18+");
+
+// Q.2 : remove duplicate array elements
+
+// var arr = [1,2,3,4,2,1,2,4,5,3,5,4,3];
+// var ans = [...new Set(arr)];
+// console.log(ans);
+
+// Q.3 : FInd the second largest number in an array
+
+// var arr = [1,4,2,4,21,1,2,4,68,80,90,100,400];
+// var unique = [...new Set(arr)];
+// console.log(unique);
+// var sort = unique.sort(function(a,b){
+//     return b-a;
+// });
+// console.log(sort);
+// console.log(sort[1]);
+
+// Q.4 : sort an array in descending order
+
+// var arr = [1,4,2,5,3,6,3,6,3,6,8];
+
+// var unique = [...new Set(arr)];
+// var sort = unique.sort(function(a,b){
+//     return b-a;
+// })
+// console.log(sort);
+
+// [...new Set(arr)].sort(function(a,b){
+//     return b-a;
+// })
+// console.log(sort);
+
 
