@@ -202,9 +202,11 @@ console.log(r + s);
 // console.log(ans);
 
 // 5. Includes : It is used to check if the string contains the specified string. It returns true or false.
-let str = 'Hello world!';
-let ans = str.includes('world');
-console.log(ans);
+// let str = 'Hello world!';
+// let ans = str.includes('world');
+// console.log(ans);
 
 // break : loop ko rokta hai.
 // continue : loop ko waha uss element se skip karta hai.
+
+
