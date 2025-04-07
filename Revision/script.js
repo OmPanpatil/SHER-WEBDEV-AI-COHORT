@@ -294,4 +294,12 @@ console.log(r + s);
 // })
 // console.log(sort);
 
+// (1)
+// getAttribute : It is used to get the value of the specified attribute of an element. It takes 1 parameter : attribute name.
+// setAttribute : It is used to set the value of the specified attribute of an element. It takes 2 parameters : (1) attribute name, (2) attribute value.
+// (2) Creating an element,
+// (3) Mouse events, Keyboard events, scroll events, double click events, wheel events, etc.
+
+let heading1 = document.querySelector('h1');
+heading1.innerHTML = 'How is it going?';
 
