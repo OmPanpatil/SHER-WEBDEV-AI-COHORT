@@ -300,6 +300,167 @@ console.log(r + s);
 // (2) Creating an element,
 // (3) Mouse events, Keyboard events, scroll events, double click events, wheel events, etc.
 
-let heading1 = document.querySelector('h1');
-heading1.innerHTML = 'How is it going?';
+// let heading1 = document.querySelector('h1');
+// heading1.innerHTML = 'How is it going?';
 
+// Q. WHich elem rpeat itself 
+
+// var arr = [1,4,6,3,6,7,4,2,4,2,4,5,3,2,4,5,5,6,3];
+
+// var uniqueness = [...new Set(arr)];
+// console.log(uniqueness);
+
+// let obj = {};
+// uniqueness.forEach(function(value){
+//     obj[value] === undefined? (obj[value]=1) : (obj[value]++);
+// });
+// console.log(obj);
+
+
+
+// Q. create a function that takes another function as an arguments and calls it after 3 seconds:
+
+function calls(called){
+    // setTimeout(() => {
+    //     // console.log(called);
+    //     // called();
+    // }, 3000);
+    setTimeout(called, 3000);
+}
+
+calls(function(){
+    console.log('Kartik calling kartik');
+});
+
+// Closure : ek aisa function jo dusre function ko apnae andar return karta hai aur jo function return hua hai wou use karre parent function kae koi variable ko.
+
+// Q. Implement your own version of .map() method as a higher-order function :
+
+let arrr = [1,4,2,5,2,5,3,8];
+
+let uniqueness = [...new Set(arrr)];
+
+// Ek function banao jo ki accept karre array and accept karre ki kya chalana hai har value par.
+
+function mapkicopy(unique, fnc){
+    var newarr = [];
+    for(let i=0; i<unique.length; i++){
+        newarr.push(fnc(unique[i]));
+    }
+    return newarr;
+}
+
+let mcopy = mapkicopy(uniqueness, function(val){
+    return val+2;
+});
+
+console.log(mcopy);
+
+
+//Wirte a function that uses closures to create a counter :
+
+function counter(){
+    let count = 0;
+    return function(){
+        count++;
+        return count;   
+    }
+}
+
+let makecount = counter();
+// for(let i=0; i<makecount(); i++){
+//     console.log(makecount());
+// }
+
+// Q. Implement a function that limits how many times a function can be called :
+
+function fnlimiter(fn, limit){
+    let totallimit = 0;
+    return function(){
+        if(totallimit<limit){
+            totallimit++;
+            fn();
+        }
+        else{
+            console.error("Limit exceeded. Buy Pro pack for more limit!");
+            
+        }
+    }
+}
+
+var l = fnlimiter(function(){
+    console.log('Heyyy!');
+}, 3);
+
+l();
+l();
+l();
+l();
+
+// Q. create a function that takes a callback and executes it after every 'n' seconds indefinitely :
+
+function ints(func, times){
+    setInterval(func, times);
+}
+
+ints(function(){
+    console.log("Hahahhahah!");
+}, 3000);
+
+
+// Q. Implement a  function that returns a function with a preset greetings :
+
+function greetkaro(greetings){
+    return function(aftergreet){
+        console.log(`${greetings} ${aftergreet}`);
+        
+    }
+}
+
+let greetingfunction = greetkaro('Namo Buddhay❤️');
+greetingfunction(" Have a nice day");
+greetingfunction("See u soon");
+
+// Q. Implement a function that takes a callback and only executes it once.
+
+function once(cb){
+    // cb();
+    let rere = false;
+    return function(){
+        if(!rere){
+            rere = true;
+            cb();
+        }
+        else{
+            console.error("It can be run only once. Buy pro pack for more access!");
+            
+        }
+    }
+}
+
+let newfunctionss = once(function(){
+    console.log("Some code which should be executes once");
+    
+});
+
+newfunctionss();
+newfunctionss();
+
+// Q. Implement a function that throttles another function :
+
+function throttles(fnn, delays){
+    let lastcalled = 0;
+    return function(){
+        let current = Date.now();
+        if(current -lastcalled >= delays){
+            lastcalled = current;
+            fnn();
+        }
+    }
+}
+
+let throttesfunction = throttles(function(){
+    console.log("Throttled function called!");
+},3000);
+
+throttesfunction();
