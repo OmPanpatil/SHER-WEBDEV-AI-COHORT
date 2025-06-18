@@ -31,7 +31,13 @@ prompt("Enter a number : ", d);
 var ans = prompt("Enter a numberssss : ", b);
 console.log(`The number u entered is ${ans}`);
 
-
+if(a<b){
+    console.log("a is less than b");
+    
+}
+else{
+    log("a is greater than or equal to b");
+}
 
 
 
